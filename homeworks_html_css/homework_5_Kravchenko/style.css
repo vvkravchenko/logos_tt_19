@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: forH;
+    src: url(fonts/bahij-sultannahia.ttf);
+}
+@font-face{
+    font-family: forP;
+    src: url(fonts/ChronicaPro-Regular.ttf);
+}
+h2{
+    font-family: forH;
+    font-weight: 500;
+}
+p{
+    font-family: forP;
+    font-size: 12px;
+    color:  rgb(170, 169, 169);
+}
+.smallText{
+    font-size: 10px;
+}
+body{
+    background-color: ghostwhite;
+}
+header{
+}
+    nav{
+        height: 60px;
+        padding-left: 35%;
+        padding-right: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    a{
+        text-decoration: none;
+        font-family: forH;
+        font-size: 20px;
+        color: black;
+        font-weight: 500;
+    }
+    a:hover{
+        color: lightskyblue;
+    }
+    .mainA{
+        color: lightskyblue;
+    }
+main{
+background-color: rgb(209, 207, 207);
+border-radius: 15px;
+margin: 0 7px 15px 7px;
+padding: 35px 20px 35px 103px;
+display: flex;
+flex-wrap: wrap;
+}
+    .section_1{
+    width: 100vw;
+    margin-bottom: 20px;
+    display: flex;
+    }
+        .section_1_1{
+            height: 120px;
+            margin-right: 20px;
+            flex-grow: 1;
+        }
+        .section_1_2{
+            height: 120px;
+            flex-grow: 1;
+            }
+    .section_2{
+        width: 100vw;
+        height: 330px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+    }
+        .section_2_1{
+            width: 65%;
+            height: 154px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .section_2_2{
+            width: 65%;
+            height: 154px;
+            margin-right: 20px;
+            order: 2;
+            position: absolute;
+            bottom: 0px;
+        }
+        .section_2_3{
+            height: 330px;
+            width: 30%;
+            padding-top: 140px;
+            flex-grow: 1;
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+    .section{
+        background-color: ghostwhite;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    aside{
+        height: 300px;
+        width: 60px;
+        background-color: ghostwhite;
+        border-radius: 15px;
+        left: 25px;
+        top: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        position: absolute;
+    }
+    .asideDiv{
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainAsideDiv{
+        background-color:lightskyblue;
+    }
+    svg{
+        height: 20px;
+    }
+    .mainSvg{
+        fill: white;
+    }
+    .imgTeam{
+        height: 80px;
+        width: 80px;
+        margin-right: 20px;
+    }
+    .imgData{
+        height: 80px;
+        width: 80px;
+        margin-right: 20px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    /* ------------- */
+    .mainSectionTeam{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        justify-content: ;
+    }
+    .sectionTeam{
+        flex-direction: column;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 35px;
+        margin-right: 40px;
+    }
+    .sectionTeam:hover{
+        background-color: lightskyblue;
+        color: white;
+    }
+    .imgPhoto{
+        border-radius: 60px;
+        height: 60px;
+        width: 60px;
+        margin: 10px 0 20px 0;
+
+    }
+   /* ---------------- */
+   table {
+       border-collapse: separate;
+       border-spacing: 0;
+       height: 400px;
+       width: 75vw;
+       margin: 30px 0 30px 40px;
+   }
+   th, td{
+       font-size: 14px;
+   }
+  td{
+      text-align: center;
+      position: relative;
+  }
+  .rightBradius{
+      border-radius: 15px 0 0 15px;
+  }
+  .leftBradius{
+      border-radius: 0 15px 15px 0;
+  }
+  tbody tr:hover{
+      background-color: ghostwhite;
+  }
+  .svgLesson{
+      height: 30px;
+      width: 30px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 20px;
+      left: 90px;
+  }
+  .svgLesson:hover{
+      background-color:lightskyblue;
+      fill: white;
+  }
