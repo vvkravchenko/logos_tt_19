@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+.mainClass{
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+    margin: 30px auto;
+}
+.firstClass{
+border: 1px dashed red;
+}
+.secondClass{
+    background-color: yellow;
+    border: 1px solid red;
+}
+.thirdGClass{
+    outline: 20px solid blue;
+}
+.fourthClass{
+    border-left: 5px solid black;
+}
