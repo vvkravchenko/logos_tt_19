@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mainClas{
+   height: 90vh;
+   margin: 20px 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.header{
+  background-color: rgb(202, 199, 199);
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  color: red;
+  padding: 10px;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Work Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.header:hover{
+    height: 11%;
+    border: 3px solid snow;
+}
+.null{
+    height: 90%;
+    width: 5%;
+}
+.mainImages{
+   height: 90%;
+   width:  45%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-between;
+}
+.bigImege{
+    border: 3px solid silver;
+    height: 50%;
+    width: 100%;
+    background-image: url(Marvel_Studios_logo.jpg);
+    background-size: 100% 100%;
+}
+.bigImage:hover{
+    border: 6px solid yellow; /* чому цей ховер не працює? */
+}
+.smallImege{
+    border: 3px solid silver;
+    height: 15%;
+    width: 20%;
+    background-image: url(Marvel_Studios_logo.jpg);
+    background-size: 100% 100%;
+}
+.smallImege:hover{
+    border: 6px solid yellow;
+}
+.text{
+    height: 90%;
+    width: 50%;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    padding: 50px 110px;
+}
+.text:hover{
+    text-decoration-line: underline;
+}

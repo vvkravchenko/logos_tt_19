@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainClass{
+    margin-top: 5vh;
+    height: 90vh;
+    width: calc(90%/7);
+    text-align: center;
+    padding-top: 40vh;
+    float: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: white;
+}
+.aClass{
+    background-image: linear-gradient(to top, darkred, red);
+}
+.rClass{
+    background-image: linear-gradient(to top, darkorchid, rgb(71, 9, 71));
+}
+.sClass{
+    background-image: linear-gradient(to top, rgb(231, 235, 28), rgb(6, 121, 73));
+}
+.eClass{
+    background-image: linear-gradient(to top, rgb(75, 221, 30), rgb(87, 7, 27));
+}
+.nClass{
+    background-image: linear-gradient(to top, rgb(243, 187, 187), rgb(158, 30, 62));
+}
+.lClass{
+    background-image: linear-gradient(to top, rgb(90, 60, 60), rgb(66, 21, 33));
+    margin-right: 5%;
+}

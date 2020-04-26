@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: chocolate;
+}
+.nav{
+    background-color: coral;
+   height: 10vh;
+   border-bottom: 3px solid rgb(122, 64, 20);
+   display: flex;
+}
+.nav1{
+    width: 70%;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 25px;
+}
+.nav2_5{
+    width: calc(30%/4);
+    text-align: center;
+    padding-top: 18px;
+    font-family: 'Comic Neue', cursive;
+    
+}
+.nav2_5:hover{
+    background-color: chocolate;
+}
