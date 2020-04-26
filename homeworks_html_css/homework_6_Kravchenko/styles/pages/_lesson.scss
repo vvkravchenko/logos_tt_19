@@ -1,0 +1,53 @@
+table{
+// border: 1px solid #000;
+margin: 100px auto;
+    tr{
+        td, th{
+            // border: 1px solid #000;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            font-weight: 600;  
+            input[type="checkbox"]{
+                width: 20px;
+                height: 20px;
+            }
+        } 
+        form{
+            display: flex;
+            align-items: center;
+            margin: 10px auto;
+            input[type="checkbox"]:checked{
+                color: maroon;
+            } 
+            // не працює((
+        }
+        .td_left{
+            border-radius: 15px 0 0 15px;
+        }
+        .td_right{
+            border-radius: 0 15px 15px 0;
+        }
+        .lesson_svg{
+            border: 1px solid #000;
+            border-radius: 10px;
+            border-color: silver;
+            height: 30px;
+            width: 30px;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .Lesson_ImgSvg{
+                width: 20px;
+            }
+        }
+        .lesson_svg:hover{
+            background-color: $hoverColor;
+            fill: white;
+        }
+    } 
+    tbody tr:hover{
+        background-color: $firstBGColor;
+    }  
+}

@@ -1,0 +1,71 @@
+aside{
+    width: 60px;
+    height: 300px;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    border-radius: 15px;
+    background-color: $firstBGColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .aside_div_svg{
+        border-radius: 10px;
+        width: 40px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .aside_svg{
+            width: 25px;
+        }
+    }
+    .aside_div_svg:hover{
+        border-radius: 10px 0 0 10px;
+        background-color: $hoverColor;
+        .aside_svg:hover{
+            fill: white;
+        }
+    }
+    .main_aside_div_svg{
+        background-color: $hoverColor;
+        .main_aside_svg{
+            fill: white;
+        }
+    }
+    .aside_div_svg::after{
+        content: '';
+        display: none;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: $hoverColor;
+        border-radius: 0 10px 10px 0;
+        width: 80px;
+        height: 35px;
+        position: absolute;
+        left: 50px;
+    }
+    .after_1:hover:after{
+        display: flex;
+        content: 'Project';
+    }
+    .after_2:hover:after{
+        display: flex;
+        content: 'Account';
+    }
+    .after_3:hover:after{
+        display: flex;
+        content: 'Groups';
+    }
+    .after_4:hover:after{
+        display: flex;
+        content: 'Cloud';
+    }
+    .after_5:hover:after{
+        display: flex;
+        content: 'Setting';
+    }
+
+}

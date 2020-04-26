@@ -1,0 +1,23 @@
+header{
+    height: 60px;
+    background-color: $firstBGColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    nav{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nav_link{
+            text-decoration: none;
+            font-family: forH;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+        }
+        .main_nav_link{
+            color: $hoverColor;
+        }
+    }
+}
