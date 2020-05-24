@@ -1,0 +1,23 @@
+/* array bgColors */
+.bgc_red{background-color: red;}
+.bgc_blue{background-color: blue;}
+.bgc_green{background-color: green;}
+.bgc_black{background-color: black;}
+.bgc_yellow{background-color: yellow;}
+.bgc_pink{background-color: pink;}
+.bgc_wite{background-color: white;}
+.bgc_indigo{background-color: indigo;}
+.bgc_teal {background-color: teal;}
+/* array fontColors */
+.fc_red{color: red;}
+.fc_blue{color: blue;}
+.fc_green{color: green;}
+.fc_black{color: black;}
+.fc_yellow{color: yellow;}
+.fc_pink{color: pink;}
+.fc_wite{color: white;}
+.fc_indigo{color: indigo;}
+.fc_teal{color: teal;}
+/* formStyle */
+.f_weight{font-weight: 600;}
+.f_style{font-style: italic;}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="forJS.css">
+</head>
+<body>
+    <section class="mainPage">
+        <div class="screenBox boxStyle">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="buttonBox">
+            <button class="edit" name="edit">edit</button>
+            <button class="style" name="style">style</button>
+        </div>
+        <div class="editBox boxStyle">
+            <textarea name="textarea" class="textarea" cols="30" rows="10"></textarea>
+            <div class="eddsaveButton">
+                <button class="add" name="add">add</button>
+                <button class="save" name="save">save</button>
+            </div>
+        </div>
+        <div class="styleBox boxStyle hide">
+            <form name="fontSizeForm">
+                <h5>Font Size:</h5>
+                    <input type="radio" name="fontSize" value="12px"> 12px 
+                    <input type="radio" name="fontSize" value="14px"> 14px 
+                    <input type="radio" name="fontSize" value="16px"> 16px 
+                    <input type="radio" name="fontSize" value="18px"> 18px 
+                    <input type="radio" name="fontSize" value="20px"> 20px 
+            </form>
+            <form name="fontFamilyForm">
+                <h5>Font Femily:</h5>
+                <select id="fontFamilySelect" name="fontFamilySelect">
+                    <option selected disabled value="default">Choose option</option>
+                    <option value="cursive">cursive</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="monospace">monospace</option>
+                    <option value="sens-serif">sens-serif</option>
+                </select>
+            </form>
+            <h5>Colors:</h5>
+            <div class="colorStyleButton">
+                <button class="colorOfText" name="colorOfText">Color of Text</button>
+                <button class="backgroundColor" name="backgroundColor">Background color</button>
+            </div>
+            <form name="formStyle">
+                <h5>Style:</h5>
+                    <input type="checkbox" name="bold" value="f_weight"> Bold text 
+                    <input type="checkbox" name="cursive" value="f_style"> Cursive text  
+            </form>
+            <div class="paletteColor hide">
+                <div class="colorBox"></div>
+                <div class="colorBox"></div>
+                <div class="colorBox"></div>
+                <div class="colorBox"></div>
+                <div class="colorBox"></div>
+                <div class="colorBox"></div>
+                <div class="colorBox"></div>
+                <div class="colorBox"></div>
+                <div class="colorBox"></div>
+            </div>
+        </div>
+    </section>
+    <section class="addPage hide">
+        <div class="boxStyle screenBox">
+            <form name="tableVSlist">
+                <h3>Choose what you want:</h3>
+                    <input type="radio" name="tvl" value="tableParam"> table 
+                    <input type="radio" name="tvl" value="listParam"> list  
+            </form>
+            <div class="tableParam hide">
+                <form name="tableParam">
+                    <div class="elForm">
+                        <label for="Count_TR">Count TR:</label>
+                        <input id="Count_TR" type="text" placeholder="Count TR:">
+                    </div>
+                    <div class="elForm">
+                        <label for="Count_TD">Count TD:</label>
+                        <input id="Count_TD" type="text" placeholder="Count TD:">
+                    </div>
+                    <h4>Add style to you table:</h4>
+                    <div class="elForm">
+                        <label for="Width_of_TD">Width of TD:</label>
+                        <input id="Width_of_TD" type="text" placeholder="Width of TD:">
+                    </div>
+                    <div class="elForm">
+                        <label for="Height_of_TD">Height of TD:</label>
+                        <input id="Height_of_TD" type="text" placeholder="Height of TD:">
+                    </div>
+                    <div class="tbBorderStyle">
+                        <label for="Width_of_border">Width of border:</label>
+                        <input id="Width_of_border" type="text" placeholder="Width:">
+                        <label for="Type_of_border">Type of border:</label>
+                        <select id="Type_of_border" name="Type of border">
+                            <option selected value="solid">solid</option>
+                            <option value="dashed">dashed</option>
+                            <option value="dotted">dotted</option>
+                            <option value="double">double</option>
+                        </select>
+                        <label for="Color_of_border">Color of border:</label> 
+                        <select id="Color_of_border" name="Color of border">
+                            <option selected value="black">black</option>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                        </select>
+                    </div>
+                    <button class="CreateTable" name="CreateTable" type="button">Create table</button>
+                </form>
+            </div>
+            <div class="listParam hide">
+                <form name="liParam">
+                    <div class="elForm">
+                        <label for="countLi">Count Li:</label>
+                        <input id="countLi" type="text" placeholder="Count Li:">
+                    </div>
+                    <div class="elForm">
+                        <label for="typeOfMarks">Type of Marks:</label>
+                        <select id="typeOfMarks">
+                            <option selected value="circle">circle</option>
+                            <option value="disc">disc</option>
+                            <option value="square">square</option>
+                        </select>
+                    </div>
+                    <button class="createList" type="button" value="Create_list">Create list</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

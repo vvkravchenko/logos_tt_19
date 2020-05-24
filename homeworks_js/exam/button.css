@@ -1,0 +1,28 @@
+button{
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+    .edit{
+        background-color: Goldenrod;
+    }
+    .style{
+        background-color: CadetBlue;
+    }
+    .add{
+        background-color: Brown;
+    }
+    .save{
+        background-color: Green;
+    }
+    .colorOfText, .backgroundColor{
+        color: white;
+        background-color: DimGrey;
+        width: 120px;
+    }
+    .CreateTable, .createList {
+        color: white;
+        background-color: green;
+        width: 120px;
+    }

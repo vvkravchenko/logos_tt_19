@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    border-collapse: collapse;
+}
+li{
+    margin-left: 20px;
+}
+form, label, button, input, select{
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: Gainsboro;
+    padding-top: 10px;
+}
+    .boxStyle{
+        width: 70%;
+        min-height: 250px;
+        margin: 0 auto;
+        background-color: Silver;
+        border-radius: 4px;
+    }
+    .screenBox{
+        padding: 15px 20px;
+        line-height: 30px;
+    }
+    .buttonBox{
+        width: 70%;
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .editBox{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+        .textarea{
+            width: 90%; 
+            height: 60%;
+        }
+        .eddsaveButton{
+            width: 90%;
+        }
+    .styleBox{
+    padding: 15px 20px;
+    line-height: 25px;
+    font-size: 12px;
+    padding-bottom: 20px;
+    position: relative;
+    }
+        .paletteColor{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            top: 20px;
+            right: 150px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+            .colorBox{
+                width: 60px;
+                height: 60px;
+                border: 1px solid #000;
+            }
+
+        input[type="text"]{
+            height: 30px;
+            width: 80%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+.hide{
+    display: none;
+}
+    .elForm{
+        display: flex;
+        justify-content: space-between;
+    }
+    #typeOfMarks{
+        height: 30px;
+        width: 80%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+    .tbBorderStyle{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+    }
+    #Width_of_border, #Type_of_border, #Color_of_border{
+        width: 110px;
+        height: 30px;
+        margin-bottom: 0;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+    #Width_of_border{
+        margin-left: 35px;
+    }
+    #fontFamilySelect{
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+    }
