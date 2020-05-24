@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.colorButton{
+    margin: 50px 0 30px 40px;
+}
+.imgButton{
+    margin: 0 0 0 40px;
+}
+.mainBox{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-wrap: wrap;
+}
+.visible{
+    display: flex;
+}
+.box{
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+}
+
+.bgcCrimson{
+    background-color: crimson;
+}
+.bgcDeepPink{
+    background-color: DeepPink;
+}
+.bgcOrangeRed{
+    background-color: OrangeRed;
+}
+.bgcGold{
+    background-color: Gold;
+}
+.bgcPurple{
+    background-color: Purple;
+}
+.bgcIndigo{
+    background-color: Indigo;
+}
+.bgcSaddleBrown{
+    background-color: SaddleBrown;
+}
+.bgcSteelBlue{
+    background-color: SteelBlue;
+}
+.bgcDimGrey{
+    background-color: DimGrey;
+}
+.bgiMountain_1{
+    background-image: url(https://as1.ftcdn.net/jpg/02/99/12/10/500_F_299121025_NuYo7OraIR32Ht1NEqHVKhIzrtcMVbgi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgiMountain_2{
+    background-image: url(https://as1.ftcdn.net/jpg/01/63/92/06/500_F_163920610_oz4hFRqtgVDXrEnKqJIOSTvRC827kYMP.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgiMountain_3{
+    background-image: url(https://as1.ftcdn.net/jpg/01/46/76/98/500_F_146769809_aQeEmCHrnqJxGHfvWJAmGluR8Skc2CyS.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgiMountain_4{
+    background-image: url(https://as1.ftcdn.net/jpg/01/72/20/14/500_F_172201480_uc9ngwTGbortcZaLn3qROGFuFbwpWPcG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgiMountain_5{
+    background-image: url(https://as1.ftcdn.net/jpg/03/08/95/06/500_F_308950654_V0b6c5nVkghxuJBuBogVveTrbSFEmtR7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgiMountain_6{
+    background-image: url(https://as2.ftcdn.net/jpg/01/46/76/91/500_F_146769170_JZtZrqMBt85XGAbdHZZF2WOXcCudxie6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgiMountain_7{
+    background-image: url(https://as1.ftcdn.net/jpg/00/38/20/00/500_F_38200060_HcRxK7XNx6h83y7V2HQsz1S4KiCMFolM.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgiMountain_8{
+    background-image: url(https://as1.ftcdn.net/jpg/00/71/80/26/500_F_71802640_mOfGSzVCa4Y8Yd0vLGk9zonAGaecWEG8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgiMountain_9{
+    background-image: url(https://as2.ftcdn.net/jpg/02/89/45/81/500_F_289458122_Uw9s40WWzaBkVv0JtxTp0dNjJf7MIj1c.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
