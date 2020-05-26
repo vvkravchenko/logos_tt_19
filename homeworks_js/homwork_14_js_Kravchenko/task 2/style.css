@@ -1,0 +1,132 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mainBox{
+    border: 1px solid #000;
+    width: 450px;
+    height: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+    .headerBox{
+        height: 55px;
+        border-radius: 10px 10px 0 0;
+        background-color: SeaGreen;
+        color: whitesmoke;
+        font-size: 22px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .formDiv{
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+        padding: 20px;
+    }
+        label{
+            font-weight: 600;
+        }
+        input[type="text"]{
+            width: 100%;
+            height: 25px;
+            margin-bottom: 15px;
+            border-radius: 3px;
+            padding-left: 10px;
+        }
+        select{
+            width: 100%;
+            height: 25px;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+        
+        button{
+            background-color: DarkGreen; 
+            color: whitesmoke;
+            width: 80%;
+            height: 40px;
+            border-radius: 5px;
+            margin: 20px auto;
+            font-weight: 600;
+            font-size: 18px; 
+        }
+.userBox{
+    border: 1px solid #000;
+    width: 400px;
+    height: 450px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    .userHeader{
+        height: 120px;
+        border-radius: 10px 10px 0 0;
+        background-color: SeaGreen;
+    }
+    .infoBox{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    position: relative;
+    }
+        .flName{
+            font-weight: 600;
+            margin-top: 80px;
+            font-size: 18px;
+        }
+        .position{
+            margin-top: 20px;
+        }
+        .signOut{
+            background-color: whitesmoke;
+            border: 1px solid DarkGreen; 
+            color: DarkGreen;
+            width: 30%;
+            height: 40px;
+            border-radius: 5px;
+            margin: 20px auto;
+            font-weight: 400;
+            font-size: 18px;  
+        }
+        .signOut:hover {
+            background-color: DarkGreen;
+            border: 1px solid DarkGreen; 
+            color: whitesmoke;
+        }
+        .photoBox{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            position: absolute;
+            top: -50px;
+            background-color: white;
+        }
+    .userFooter{
+        height: 70px;
+        border-radius: 0 0 10px 10px;
+        background-color: SeaGreen;
+    }
+.svgBoy{
+    background-image: url(boy.svg);
+}
+.svgGirl{
+    background-image: url(girl.svg);
+}
+.hide{
+display: none;
+}
+    

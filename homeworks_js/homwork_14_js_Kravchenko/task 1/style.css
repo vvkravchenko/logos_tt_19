@@ -1,0 +1,25 @@
+.mainBox{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+    fieldset{
+        margin: 20px;
+    }
+
+        .formEl{
+            width: 400px;
+            height: 25px;
+            padding-left: 5px;
+        }
+        .button{
+            width: 100px;
+            height: 31px;
+            background-color: chartreuse;
+            box-shadow: 2px 0 2px chartreuse;
+        }
+        .formElLast{
+            width: 100%;
+            height: 25px;
+            padding-left: 5px;
+        }

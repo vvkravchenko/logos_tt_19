@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainBox">
+        <div class="headerBox">Create your account</div>
+        <div class="formDiv">
+            <form name="crt_acc">
+                <label>First Name <br> <input name="firstName" type="text" placeholder="type here..."></label>
+                <label>Second Name <br> <input name="secondName" type="text" placeholder="type here..."></label>
+                <label>Email Address <br> <input name="email" type="text" placeholder="enter email"></label>
+                <div>
+                    <label><input name="sex" type="radio" checked value="man"> man</label>
+                    <label><input name="sex" type="radio" value="women"> women</label>
+                </div>
+                <label>Position<br>
+                <select name="position">
+                    <option selected disabled value="Choose...">Choose...</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="QC/QA">QC/QA</option>
+                </select>
+                </label>
+                <label><input name="agree" type="checkbox"> I agree all statements in Terms of service</label>
+                <button name="button" type="button" value="Sign Up" disabled>Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <div class="userBox hide">
+        <div class="userHeader"></div>
+        <div class="infoBox">
+            <span class="flName"></span>
+            <span class="email"></span>
+            <span class="position"></span>
+            <button class="signOut" name="SignOut" type="button">Sign Out</button>
+            <div class="photoBox">
+            </div>
+        </div>
+        <div class="userFooter"></div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
