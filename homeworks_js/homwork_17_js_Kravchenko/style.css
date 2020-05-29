@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: xxx;
+    color: FireBrick;
+}
+@font-face{
+    font-family: xxx;
+    src: url(15339.otf);
+}
+p{
+    font-size: 16px;
+}
+li{
+    margin: 10px 0;
+}
+button{
+    width: 60px;
+    height: 30px;
+}
+    .btn-timerSet{
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+    }
+.mainSection{
+border: 1px solid rgb(38, 39, 99);
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+background-color: black;
+}
+    .box{
+        border: 1px solid DarkRed;
+        box-shadow: 0 0 0 1px beige;
+        width: 90%;
+        height: 25%;
+    }
+    .clock{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+            .date{
+                position: absolute;
+                top: 5px;
+            }
+            .time{
+                font-size: 60px;
+            }
+    .stopwatch{
+        display: flex;
+        justify-content: space-between;
+    }
+            .stopwatchScreen{
+                width: 45%;
+                font-size: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            .stopwatchScreen > span{
+                width: 100%;
+                text-align: center;
+            }
+            .stopwatchMemory{
+                width: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+    .timer{
+        display: flex;
+    }
+            .timerNav{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                font-size: 50px;
+            }
+            .timerScreen{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                font-size: 50px;
+
+            }
+           

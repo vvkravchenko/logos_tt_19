@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="mainSection">
+        <div class="box clock">
+            <div class="date"></div>
+            <span class="time"></span>
+        </div>
+        <div class="box stopwatch">
+            <div class="stopwatchScreen">
+                <span></span>
+                <form name="stopwatchNav">
+                    <button name="start" type="button" value="start">START</button>
+                    <button name="loop" type="button" value="loop">LOOP</button>
+                    <button name="stop" type="button" value="stop">STOP</button>
+                    <button name="reset" type="button" value="reset">RESET</button>
+                </form>
+            </div>
+            <div class="stopwatchMemory">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="box timer">
+            <div class="timerNav">
+                <div class="timerSet"></div>
+                <form name="timerSet">
+                    <p>MINUTES</p>
+                    <button class="btn-timerSet" name="plus" type="button">+</button>
+                    <button class="btn-timerSet" name="minus" type="button">-</button>
+                </form>
+            </div>
+            <div class="timerScreen">
+                <div class="readout"></div>
+                <form name="readoutNav">
+                    <button name="start" type="button" value="start">START</button>
+                    <button name="stop" type="button" value="stop">STOP</button>
+                    <button name="reset" type="button" value="reset">RESET</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>
