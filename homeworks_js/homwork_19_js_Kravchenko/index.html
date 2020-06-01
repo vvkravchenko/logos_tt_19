@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="signUp">
+        <p class="formHeader">Please sign up</p>
+        <div class="input">
+            <input id="fname" type="text" name="fname" required>
+            <label for="fname">First name</label>
+            <div class="valid_fname"></div>
+        </div>
+        <div class="input">
+            <input id="lname" type="text" name="lname" required>
+            <label for="lname">Last name</label>
+            <div class="valid_lname"></div>
+        </div>
+        <div class="input">
+            <input id="email" type="text" name="email" required>
+            <label for="email">Email address</label>
+            <div class="valid_email"></div>
+        </div>
+        <div class="input">
+            <input id="phone" type="text" name="phone" required>
+            <label for="phone">Phone number</label>
+            <div class="valid_phone"></div>
+        </div>
+        <div class="input">
+            <input id="password" type="text" name="password" required>
+            <label for="password">Password</label>
+            <div class="valid_password"></div>
+        </div>
+        <button type="button" name="button">Sign Up</button>
+    </form>
+    <script src="main.js"></script>
+    <!-- Подключение библиотеки jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="jquery.maskedinput.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#phone").mask("+38(099)999-99-99");
+        });
+    </script>
+   
+</body>
+</html>

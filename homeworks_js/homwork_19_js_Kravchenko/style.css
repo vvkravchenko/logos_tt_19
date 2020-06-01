@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: darkgray;
+}
+    form{
+        margin: 50px auto;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+        .formHeader{
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        label{
+            position: absolute;
+            color: DarkKhaki;
+            height: 40px;
+            top: 10px;
+            left: 15px;
+            pointer-events: none;
+        }
+        .input{
+            margin-bottom: 20px;
+            position: relative;
+        }
+        input{
+            height: 40px;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 40px;
+            font-size: 16px;    
+            border-radius: 5px;
+            border: 1px solid DimGrey;
+            outline: none;
+            color: dimgray;
+        }
+        input:focus, input:valid{
+            border: 1px solid blue;
+            padding-top: 15px;
+        }
+        input:focus + label, input:valid + label{
+            font-size: 11px;
+            top: 5px;
+        }
+        .invalid {
+            height: 40px;
+            border: 2px solid red;
+            border-radius: 5px;
+            position: absolute;
+            height: 40px;
+            width: 100%;
+            top: 0;
+            pointer-events: none;
+          }
+        .invalid::after{
+            content: url('data:image/svg+xml; utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22far%22%20data-icon%3D%22window-close%22%20class%3D%22svg-inline--fa%20fa-window-close%20fa-w-16%22%20role%3D%22img%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22red%22%20d%3D%22M464%2032H48C21.5%2032%200%2053.5%200%2080v352c0%2026.5%2021.5%2048%2048%2048h416c26.5%200%2048-21.5%2048-48V80c0-26.5-21.5-48-48-48zm0%20394c0%203.3-2.7%206-6%206H54c-3.3%200-6-2.7-6-6V86c0-3.3%202.7-6%206-6h404c3.3%200%206%202.7%206%206v340zM356.5%20194.6L295.1%20256l61.4%2061.4c4.6%204.6%204.6%2012.1%200%2016.8l-22.3%2022.3c-4.6%204.6-12.1%204.6-16.8%200L256%20295.1l-61.4%2061.4c-4.6%204.6-12.1%204.6-16.8%200l-22.3-22.3c-4.6-4.6-4.6-12.1%200-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1%200-16.8l22.3-22.3c4.6-4.6%2012.1-4.6%2016.8%200l61.4%2061.4%2061.4-61.4c4.6-4.6%2012.1-4.6%2016.8%200l22.3%2022.3c4.7%204.6%204.7%2012.1%200%2016.8z%22%2F%3E%3C%2Fsvg%3E');
+            display: block;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 3px;
+            right: 5px;
+        }
+        .valid {
+            height: 40px;
+            border: 2px solid green;
+            border-radius: 5px;
+            position: absolute;
+            height: 40px;
+            width: 100%;
+            top: 0;
+            pointer-events: none;
+          }
+          .valid::after {
+              content: url('data:image/svg+xml; utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22far%22%20data-icon%3D%22check-square%22%20class%3D%22svg-inline--fa%20fa-check-square%20fa-w-14%22%20role%3D%22img%22%20viewBox%3D%220%200%20448%20512%22%3E%3Cpath%20fill%3D%22green%22%20d%3D%22M400%2032H48C21.49%2032%200%2053.49%200%2080v352c0%2026.51%2021.49%2048%2048%2048h352c26.51%200%2048-21.49%2048-48V80c0-26.51-21.49-48-48-48zm0%20400H48V80h352v352zm-35.864-241.724L191.547%20361.48c-4.705%204.667-12.303%204.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667%2012.303-4.637%2016.97.069l59.792%2060.277%20141.352-140.216c4.705-4.667%2012.303-4.637%2016.97.068l22.536%2022.718c4.667%204.706%204.637%2012.304-.068%2016.971z%22%2F%3E%3C%2Fsvg%3E');
+              display: block;
+              height: 30px;
+              width: 30px;
+              position: absolute;
+              top: 1px;
+              right: 5px;
+          }
+        button{
+            height: 40px;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: SlateBlue;
+            color: white;
+            border: 1px solid DimGrey;
+            outline: none;
+        }
+        button:focus{
+            border: 2px solid blue;
+        }
+        button:hover{
+            background-color: DarkSlateBlue;
+        }
+      
