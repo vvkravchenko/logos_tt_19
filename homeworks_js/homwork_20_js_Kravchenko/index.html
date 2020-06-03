@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainBox">
+        <form name="signUp">
+
+            <label for="login">Login</label>
+            <input id="login" type="text" name="login" placeholder="Enter login">
+
+            <label for="pass">Password</label>
+            <input id="pass" type="password" name="password" placeholder="Enter password">
+
+            <label for="email">Email address</label>
+            <input id="email" type="email" name="email" placeholder="Enter email">
+
+            <button id="addUser" type="button" name="addUser" >Add User</button>
+
+            <button class="hide" id="editUser" type="button" name="editUser" >Edit User</button>
+
+        </form>
+    </div>
+
+    <div class="mainBox">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Login</th>
+                    <th>Password</th>
+                    <th>Email</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+               
+            </tbody>
+        </table>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
