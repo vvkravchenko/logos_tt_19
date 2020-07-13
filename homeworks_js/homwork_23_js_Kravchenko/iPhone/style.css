@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+#button{
+    position: absolute;
+    top: 0;
+}
+#button2{
+    position: absolute;
+    top: 40px;
+}
+.mainBox{
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+    background-image: url("https://www.virginmedia.com/content/dam/virginmedia/dotcom/images/mobile-browse/Samsung/Galaxy-A71/Samsung-A71-silver-front-470x594.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+    .screen{
+        background-color: dimgray;
+        width: 201px;
+        height: 442.5px;
+        position: absolute;
+        top: 26.4px;
+        left: 48.5px;
+        border-radius: 14.5px;
+    }
+    .progresBar{
+        background-color: green;
+        border-radius: 14.5px;
+        width: 201px;
+        height: 443px;
+        position: absolute;
+        bottom: 30.8px;
+        left: 48.5px;
+    }
+    .textBox{
+        color: white;
+        position: absolute;
+        top: 150px;
+        left: 105px;
+        text-align: center;
+    }
+    h2{
+        font-size: 100px;
+    }
+    h4{
+        font-size: 25px;
+    }
