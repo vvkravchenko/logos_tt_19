@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+<!-- first page -->
+    <section class="screen">
+        <header>
+            <section class="nav">
+                <div class="icoEditor">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="65%" height="65%" viewBox="0 0 64 64" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><rect id="Icons" x="-1216" y="-128" width="25" height="25" style="fill:none;"/><g id="Icons1" serif:id="Icons"><g id="Strike"/><g id="H1"/><g id="H2"/><g id="H3"/><g id="list-ul"/><g id="hamburger-1"/><g id="hamburger-2"/><g id="list-ol"/><g id="list-task"/><g id="trash"/><g id="vertical-menu"/><g id="horizontal-menu"/><g id="sidebar-2"/><g id="Pen"/><g id="Pen1" serif:id="Pen"/><g id="clock"/><g id="external-link"/><g id="hr"/><g id="info"/><g id="warning"/><g id="plus-circle"/><g id="minus-circle"/><g id="vue"/><g id="cog"/><g id="logo"/><g id="eye-slash"/><g id="eye"/><g id="toggle-off"/><g id="shredder"/><g id="spinner--loading--dots-" serif:id="spinner [loading, dots]"/><g id="react"/><path d="M50,56l-36,0l0,-36.838l3.778,3.838l0,29.167l28.444,0l0,-40.315l-9.789,0l-3.71,-3.852l17.277,0.018l0,47.982Z"/><path id="code" d="M22.539,25.079l-8.539,-8.54l8.539,-8.539l2.278,2.277l-6.263,6.262c2.372,2.372 3.89,3.891 6.263,6.263l-2.278,2.277Zm15.592,-8.54l-8.539,8.54l-2.277,-2.277l6.262,-6.263l-6.262,-6.262l2.277,-2.277l8.539,8.539Z"/></g></svg>
+                </div>
+                <div class="textStyle">
+                        <form name="textStyleForm">
+                                <input class="custom-checkbox" type="checkbox" id="bold" value="bold">
+                                <label for="bold"></label>
+                                <input class="custom-checkbox" type="checkbox" id="italic" value="italic">
+                                <label for="italic"></label>
+                                <input class="custom-checkbox" type="checkbox" id="underline" value="underline">
+                                <label for="underline"></label>
+                                <input class="custom-checkbox" type="checkbox" id="line-through" value="line-through">
+                                <label for="line-through"></label>
+                        </form>
+                </div>
+                <div class="lcr">
+                        <input class="custom-rb" type="radio" name="radio" id="left" value="left">
+                        <label for="left"></label>
+                        <input class="custom-rb" type="radio" name="radio" id="center" value="center">
+                        <label for="center"></label>
+                        <input class="custom-rb" type="radio" name="radio" id="end" value="end">
+                        <label for="end"></label>
+                </div>
+                <div class="options">
+                        <div class="optionStyle" style="border-radius: 5px 0 0 5px;">
+                            <img class="img jqButtonFstyle" src="text.png" alt="">
+                            <div class="fontStyleList jqHideFstyle hide">
+                                    <span style="font-family: Arial;">Arial</span>
+                                    <span style="font-family: Georgia">Georgia</span>
+                                    <span style="font-family: Impact">Impact</span>
+                                    <span style="font-family: Tahoma;">Tahoma</span>
+                                    <span style="font-family: 'Times New Roman';">Times New Roman</span>
+                                    <span style="font-family: Verdana;">Verdana</span>
+                            </div>
+                        </div>
+                <div class="optionStyle">
+                            <img class="img jqButtonFsize" src="fontSize.png" alt="">
+                            <div class="fontStyleList fontSizeList jqHideFsize hide">
+                                    <span style="font-size: 12px;">12px</span>
+                                    <span style="font-size: 14px;">14px</span>
+                                    <span style="font-size: 16px;">16px</span>
+                                    <span style="font-size: 18px;">18px</span>
+                                    <span style="font-size: 20px;">20px</span>
+                                    <span style="font-size: 22px;">22px</span>
+                                    <span style="font-size: 25px;">25px</span>
+                                    <span style="font-size: 30px;">30px</span>
+                            </div>
+                </div>
+                <div class="optionStyle">
+                            <img class="img jqBtnModTxtClr" src="art.png" alt="">
+                </div>
+                            <div class="ModTxtClr">
+                                <p>Choose text color</p>
+                                <span class="ModTxtClr_close close">x</span>
+                                <div class="boxForColors">
+                                    <div class="boxColor" style="background-color: crimson;"></div>
+                                    <div class="boxColor" style="background-color: red;"></div>
+                                    <div class="boxColor" style="background-color: DeepPink;"></div>
+                                    <div class="boxColor" style="background-color: MediumVioletRed;"></div>
+                                    <div class="boxColor" style="background-color: Tomato;"></div>
+                                    <div class="boxColor" style="background-color: Orange;"></div>
+                                    <div class="boxColor" style="background-color: Gold;"></div>
+                                    <div class="boxColor" style="background-color: Yellow;"></div>
+                                    <div class="boxColor" style="background-color: Violet;"></div>
+                                    <div class="boxColor" style="background-color: Indigo;"></div>
+                                    <div class="boxColor" style="background-color: SaddleBrown;"></div>
+                                    <div class="boxColor" style="background-color: Maroon;"></div>
+                                    <div class="boxColor" style="background-color: Green;"></div>
+                                    <div class="boxColor" style="background-color: Olive;"></div>
+                                    <div class="boxColor" style="background-color: Aqua;"></div>
+                                    <div class="boxColor" style="background-color: Blue;"></div>
+                                    <div class="boxColor" style="background-color: White;"></div>
+                                    <div class="boxColor" style="background-color: Beige;"></div>
+                                    <div class="boxColor" style="background-color: Gray;"></div>
+                                    <div class="boxColor" style="background-color: DarkSlateGray;"></div>
+                                    <div class="boxColor" style="background-color: Black;"></div>
+                                </div>
+                            </div>
+                <div id="myOverlay"></div>
+                <div class="optionStyle" style="border-radius: 0 5px 5px 0;">
+                            <img class="img jqBtnModStyle" src="fullphoto_image_picturefille_4504.png" alt="">
+                </div> 
+                        <div class="tabs">
+                            <p>Choose background color or image</p>
+                            <span class="ModTxtClr_close close">x</span>
+                            <div class="tabs-header">
+                                <div class="tabs-header_item active jq-tab-trigger" data-tab="1">Colors</div>
+                                <div class="tabs-header_item jq-tab-trigger" data-tab="2">Images</div>
+                                <div class="tabs-header_item jq-tab-trigger" data-tab="3">Files</div>
+                            </div>
+                        <div class="tabs-content">
+                            <div class="tabs-content_item active jq-tab-content" data-tab="1">
+                                <div class="boxForColors_tab">
+                                    <div class="boxColor_tabs" style="background-color: crimson;"></div>
+                                    <div class="boxColor_tabs" style="background-color: red;"></div>
+                                    <div class="boxColor_tabs" style="background-color: DeepPink;"></div>
+                                    <div class="boxColor_tabs" style="background-color: MediumVioletRed;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Tomato;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Orange;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Gold;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Yellow;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Violet;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Indigo;"></div>
+                                    <div class="boxColor_tabs" style="background-color: SaddleBrown;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Maroon;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Green;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Olive;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Aqua;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Blue;"></div>
+                                    <div class="boxColor_tabs" style="background-color: White;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Beige;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Gray;"></div>
+                                    <div class="boxColor_tabs" style="background-color: DarkSlateGray;"></div>
+                                    <div class="boxColor_tabs" style="background-color: Black;"></div>
+                                </div>
+                            </div>
+                            <div class="tabs-content_item jq-tab-content" data-tab="2">
+                                <div class="boxForColors_tab">
+                                    <div class="boxImages_tabs bg_img_style bg_img_1"></div>
+                                    <div class="boxImages_tabs bg_img_style bg_img_2"></div>
+                                    <div class="boxImages_tabs bg_img_style bg_img_3"></div>
+                                    <div class="boxImages_tabs bg_img_style bg_img_4"></div>
+                                    <div class="boxImages_tabs bg_img_style bg_img_5"></div>
+                                    <div class="boxImages_tabs bg_img_style bg_img_6"></div>
+                                    <div class="boxImages_tabs bg_img_style bg_img_7"></div>
+                                    <div class="boxImages_tabs bg_img_style bg_img_8"></div>
+                                    <div class="boxImages_tabs bg_img_style bg_img_9"></div>
+                                </div>
+                            </div>
+                            <div class="tabs-content_item jq-tab-content" data-tab="3">
+                                <label for="myfile" class="label">Choose file</label>
+                                <input type="file" class="definput" id="myfile" name="myfile">
+                            </div>
+                        </div>    
+                    </div> 
+                    <div id="myOverlay"></div>
+                </div>
+                <div class="icoLock">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 401.998 401.998" style="enable-background:new 0 0 401.998 401.998;" xml:space="preserve"><g><path d="M357.45,190.721c-5.331-5.33-11.8-7.993-19.417-7.993h-9.131v-54.821c0-35.022-12.559-65.093-37.685-90.218   C266.093,12.563,236.025,0,200.998,0c-35.026,0-65.1,12.563-90.222,37.688C85.65,62.814,73.091,92.884,73.091,127.907v54.821   h-9.135c-7.611,0-14.084,2.663-19.414,7.993c-5.33,5.326-7.994,11.799-7.994,19.417V374.59c0,7.611,2.665,14.086,7.994,19.417   c5.33,5.325,11.803,7.991,19.414,7.991H338.04c7.617,0,14.085-2.663,19.417-7.991c5.325-5.331,7.994-11.806,7.994-19.417V210.135   C365.455,202.523,362.782,196.051,357.45,190.721z M274.087,182.728H127.909v-54.821c0-20.175,7.139-37.402,21.414-51.675   c14.277-14.275,31.501-21.411,51.678-21.411c20.179,0,37.399,7.135,51.677,21.411c14.271,14.272,21.409,31.5,21.409,51.675V182.728   z"/></svg>
+                </div>
+                <div class="SignIn">
+                    <p>Sign In</p>
+                    <span class="ModTxtClr_close close">x</span>
+                    <div class="boxForColors">
+                        <form name="SignInForm" id="SignInForm">
+                            <input type="login" placeholder="Login here...">
+                            <input type="password" placeholder="Password here...">
+                            <button type="button" class="signIn_btn">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section id="textarea">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est enim, possimus facere eum minus ducimus?</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est enim, possimus facere eum minus ducimus?</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est enim, possimus facere eum minus ducimus?</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est enim, possimus facere eum minus ducimus?</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est enim, possimus facere eum minus ducimus?</p>
+            </section>
+        </main>
+    </section>
+<!-- second page -->
+    <section class="editor hide">
+      <header>
+       <!-- save -->
+        <div class="options">
+            <div class="optionStyle jqsave" style="border-radius: 5px 0 0 5px;">
+                <img class="img" src="save.png" alt="">
+            </div>
+        <!-- table -->
+            <div class="optionStyle jqtable">
+                <img class="img" src="table.png" alt="">
+            </div>
+                <div class="ModTxtClr ModeTable">
+                    <p>Create table</p>
+                    <span class="ModTxtClr_close close">x</span>
+                    <div class="boxForColors">
+                        <form name="createTable" class="createTable" id="createTable">
+                            <label for="countTR">Count TR</label>
+                            <input type="text" id="countTR" placeholder="Type here...">
+                            <label for="WidthofTD">Width of TD</label>
+                            <input type="text" id="WidthofTD" placeholder="Type here...">
+                            <label for="WidthofBorder">Width of border</label>
+                            <input type="text" id="WidthofBorder" placeholder="Type here...">
+                            <label for="countTD">Count TD</label>
+                            <input type="text" id="countTD" placeholder="Type here...">
+                            <label for="HeightofTD">Height of TD</label>
+                            <input type="text" id="HeightofTD" placeholder="Type here...">
+                            <label for="Style_of_border">Style of border:</label>
+                            <select id="Style_of_border" name="Style of border">
+                                <option selected value="choose">choose style</option>
+                                <option value="solid">solid</option>
+                                <option value="dashed">dashed</option>
+                                <option value="dotted">dotted</option>
+                                <option value="double">double</option>
+                            </select>
+
+                            <label class="labelCB" for="Color_of_border">Color of border:</label> 
+                            <select id="Color_of_border" name="Color of border">
+                                <option selected value="choose">choose color</option>
+                                <option value="black">black</option>
+                                <option value="red">red</option>
+                                <option value="blue">blue</option>
+                                <option value="green">green</option>
+                            </select>
+
+                            <input class="btn reset jqresetTb" type="button" value="Reset">
+                            <input class="btn create jqcreateTb" type="button" value="Create table">
+                        </form>
+                    </div>
+                    <p class ='invalidNoticeTb hide'>invalid value</p>
+                </div>
+                <div id="myOverlay" class="myOverlay"></div> 
+           
+            <!-- OL -->
+            <div class="optionStyle jqol">
+                <img class="img" src="ol.png" alt="">
+            </div>
+            <div class="ModTxtClr ModOL">
+                <p>Create OL</p>
+                <span class="ModTxtClr_close close">x</span>
+                <div class="boxForColors">
+                    <form name="createol" class="createol" id="createol">
+                        <label for="countLI">Count LI item</label>
+                        <input type="text" id="countLI" placeholder="Type here...">
+                        <label for="MarkOL">Type mark of list</label>
+                        <select id="MarkOL" name="MarkOL">
+                            <option selected value="choose">choose OL type mark</option>
+                            <option value="1">1</option>
+                            <option value="I">I</option>
+                            <option value="i">i</option>
+                            <option value="A">A</option>
+                            <option value="a">a</option>
+                        </select>
+                        <input class="btn reset" type="button" value="Reset">
+                        <input class="btn create" type="button" value="Create list">
+                    </form>
+                </div>
+                <p class ='invalidNoticeOL hide'>invalid value</p>
+            </div>
+            <!-- UL -->
+            <div class="optionStyle jqul" style="border-radius: 0 5px 5px 0;">
+                <img class="img" src="ul.png" alt="">
+            </div>
+            <div class="ModTxtClr ModUL">
+                <p>Create UL</p>
+                <span class="ModTxtClr_close close">x</span>
+                <div class="boxForColors">
+                    <form name="createul" class="createol" id="createul">
+                        <label for="countLI">Count LI item</label>
+                        <input type="text" id="countLI" placeholder="Type here...">
+                        <label for="MarkUL">Type mark of list</label>
+                        <select id="MarkUL" name="MarkUL" id="MarkUL">
+                            <option selected value="choose">choose UL type mark</option>
+                            <option value="circle">circle</option>
+                            <option value="disc">disc</option>
+                            <option value="square">square</option>
+                        </select>
+                        <input class="btn reset" type="button" value="Reset">
+                        <input class="btn create" type="button" value="Create list"> 
+                    </form>
+                </div>
+                <p class ='invalidNoticeUL hide'>invalid value</p>
+            </div>
+        </div>
+      </header>
+      <main>
+<textarea name="screenTextArea" id="screentextarea" cols="30" rows="10">
+</textarea>
+    </main>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
