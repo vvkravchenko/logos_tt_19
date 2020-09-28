@@ -1,0 +1,128 @@
+.boxHeader{
+    width: 720px;
+    height: 570px;
+}
+.commonBigBox{
+    width: 49%;
+    .bigPhotoBox{
+        width: 557px;
+        height: 368px;
+        margin-top: 116px;
+    }
+    .dateLinkBox{
+        height: 78px;
+        display: flex;
+        justify-content: space-between;
+        .date{
+            width: 117px;
+            height: 18px;
+            margin-top: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: Kanit;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 6px;
+            color: #000000;
+
+        }
+        .link{
+            width: 57px;
+            height: 18px;
+            margin-top: 29px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: Kanit;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            a{
+                color: #000000;
+            }
+        }
+    }
+    .articleHeaderBox{
+        margin-bottom: 19px;
+        height: 72px;
+        font-family: Kanit;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #1F1F1D;
+    }
+    .articleBox{
+        height: 54px;
+        font-family: Kanit;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+    }
+}
+.commonSmallBox{
+    width: 363px;
+    .smallPhotoBox{
+        width: 363px;
+        height: 240px;
+        margin-top: 63px;
+    }
+    .dateLinkBox{
+        height: 58px;
+        display: flex;
+        justify-content: space-between;
+        .date{
+            width: 117px;
+            height: 18px;
+            margin-top: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: Kanit;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 6px;
+            color: #000000;
+
+        }
+        .link{
+            width: 57px;
+            height: 18px;
+            margin-top: 18px;
+            text-align: end;
+            
+            font-family: Kanit;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            a{
+                color: #000000;
+            }
+        }
+    }
+    .articleHeaderBox{
+        height: 27px;
+        margin-bottom: 170px;
+        font-family: Kanit;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+        overflow: hidden;
+        color: #1F1F1D;
+    }
+}
+.issueBox{
+    width: 50%;
+    height: 360px;
+}
