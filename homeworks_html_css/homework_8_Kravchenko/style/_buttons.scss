@@ -1,0 +1,39 @@
+#rm{
+    position: absolute;
+    width: 198px;
+    height: 55px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    bottom: 10%;
+    left: calc(50% - 100px);
+}
+#sa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 238px;
+    height: 42px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    position: absolute;
+    bottom: -180px;
+    left: 50px;
+    @media screen and (max-width: 411px) {
+        left: -240px;
+        }
+}
+#sn{
+    width: 198px;
+    height: 42px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    margin-left: 150px;
+    @media screen and (max-width: 411px) {
+        position: absolute;
+        bottom: 40px;
+        left: -50px;
+        }
+}

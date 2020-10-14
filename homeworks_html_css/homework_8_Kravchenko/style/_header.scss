@@ -1,0 +1,142 @@
+header{
+        .close {
+            position: absolute;
+            left: 51px;
+            top: 51px;
+            width: 32px;
+            height: 32px;
+            opacity: 0.3;
+        }
+        .close:hover {
+            opacity: 1;
+        }
+        .close:hover ~ .menu{
+            display:block;
+        }
+        .close:before, .close:after {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 33px;
+            width: 2px;
+            background-color: #333;
+        }
+        .close:before {
+            transform: rotate(45deg);
+        }
+        .close:after {
+            transform: rotate(-45deg);
+        }
+        .menu{
+            display: none;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            left: 51px;
+            top: 106px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.1);
+            font-family: Kanit;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration-line: underline;
+            padding: 52px 66px;
+
+            li{
+                margin-bottom: 13px;
+            }
+        }
+    .title{
+        width: 100%;
+        height: 120px;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mutualBoxHeader{
+        display: flex;
+        @media screen and (max-width: 411px) {
+         flex-wrap: wrap;   
+        }
+        .photoBoxHeader{
+            background-image: url(./assets/images/photoBoxHeader.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            @media screen and (max-width: 411px) {
+            width: 100%;
+            }
+        }
+        .textBoxHeader{
+            background-color: #000000;
+            position: relative;
+            @media screen and (max-width: 411px) {
+                width: 100%;
+                }
+            .headerDateLink{
+                padding: 10px;
+                max-width: 502px;
+                height: 24px;
+                margin: 8% auto;
+                display: flex;
+                justify-content: space-between;
+                .headerDate{
+                    width: 136px;
+                    height: 21px;
+                    margin-bottom: 2px;
+                    font-family: Kanit;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 7px;
+                    color: white;
+                    margin: 15px;
+                }
+                .headerLink{
+                    width: 75px;
+                    height: 24px;
+                    font-family: Kanit;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-decoration-line: underline;
+                    text-transform: uppercase;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+            .headerArticleHeader{
+                padding: 10px;
+                max-width: 503px;
+                min-height: 42px;
+                margin: 0 auto;
+
+                font-family: Kanit;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 42px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                overflow: hidden;
+            }
+            .headerArticle{
+                max-width: 503px;
+                min-height: 42px;
+                margin: 1% auto;
+                padding: 10px;
+                font-family: Kanit;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: #FFFFFF;
+                letter-spacing: 1px;
+                overflow: hidden;
+
+            }
+        }
+    }
+}

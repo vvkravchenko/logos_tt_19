@@ -1,0 +1,147 @@
+main{
+    .mutualFeatured{
+        width: 80%;
+        margin: 0 auto;
+        .mutualFeaturedFor2{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .featuredLeft{
+                background-image: url(./assets/images/featuredLeft.png);
+                position: relative;
+            }
+            .featuredLeft::before{
+                content: 'featured';
+                position: absolute;
+                top: -50px;
+                font-family: Kanit;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+                color: #1F1F1D;
+                text-transform: uppercase;
+            }
+            .featuredRight{
+                background-image: url(./assets/images/featuredRight.png);
+            }
+        }
+        .mutualFeaturedFor3{
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 411px) {
+                overflow: hidden;;
+                }
+            .featuredSmallLeft{
+                background-image: url(./assets/images/featuredSmallLeft.png);
+               
+            }
+            .featuredSmallCenter{
+                background-image: url(./assets/images/featuredSmallCenter.png);
+                position: relative;
+                
+            }
+            .featuredSmallRight{
+                background-image: url(./assets/images/featuredSmallRight.png);
+               
+            }
+        }
+    }
+    .mutualIssue{
+        margin-left: 150px;
+        margin-right: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (max-width: 411px) {
+            margin: 0;
+            }
+        .issueLeft{
+            background-image: url(./assets/images/issueLeft.png);
+        }
+        .issueRight{
+            position: relative;
+            background-color: black;
+            .issueText{
+                margin: 123px auto;
+                width: 335px;
+                height: 51px;
+                font-family: Kanit;;
+                font-weight: 500;
+                font-size: 34px;
+                line-height: 51px;
+                color: #FFFFFF;
+                @media screen and (max-width: 411px) {
+                    margin: 123px auto;
+                    }
+            }
+        }
+    }
+    .mutualInterviews{
+        position: relative;
+        margin-left: 150px;
+        margin-right: 150px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 411px) {
+            margin: 0 0 0 40px;
+            overflow: hidden;
+            }
+        .intSmallLeft{
+            background-image: url(./assets/images/intSmallLeft.png);
+            position: relative;
+            margin-top: 120px;
+        }
+        .intSmallLeft::before{
+            content: 'interviews';
+            position: absolute;
+            top: -50px;
+            font-family: Kanit;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #1F1F1D;
+            text-transform: uppercase;
+        }
+        .intSmallCenter{
+            margin-top: 120px;
+            background-image: url(./assets/images/intSmallCenter.png);
+            position: relative;
+        }
+        .intSmallRight{
+            margin-top: 120px;
+            background-image: url(./assets/images/intSmallRight.png);
+        }
+    }
+    .mutualNews{
+        position: relative;
+        margin-left: 150px;
+        margin-right: 150px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 411px) {
+            margin: 0 0 0 40px;
+            overflow: hidden;
+            }
+        .newsSmallLeft{
+            background-image: url(./assets/images/newsSmallLeft.png);
+            position: relative;
+        }
+        .newsSmallLeft::before{
+            content: 'news';
+            position: absolute;
+            top: -50px;
+            font-family: Kanit;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #1F1F1D;
+            text-transform: uppercase;
+        }
+        .newsSmallCenter{
+            background-image: url(./assets/images/newsSmallCenter.png);
+            position: relative;
+        }
+        .newsSmallRight{
+            background-image: url(./assets/images/newsSmallRight.png);
+        }
+    }
+}
