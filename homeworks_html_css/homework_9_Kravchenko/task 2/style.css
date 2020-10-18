@@ -1,0 +1,83 @@
+body{
+    background-color: lavender;
+}
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+
+  width: 300px;
+  height: 100px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box p{
+  width: 100%;
+}
+
+.circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.snow{
+  --color: 245, 245, 245;
+  background-color: rgb(var(--color));
+}
+.tomato{
+  --color: 255, 99, 71;
+  background-color: rgb(var(--color));
+}
+.orange{
+   --color: 255, 65, 0;
+  background-color: rgb(var(--color));
+}
+.yellow{
+  --color: 255, 255, 0;
+  background-color: rgb(var(--color));
+}
+.deepskyblue{
+  --color: 0, 191, 255;
+  background-color: rgb(var(--color));
+}
+.green{
+  --color: 0, 128, 0;
+  background-color: rgb(var(--color));
+}
+.purple{
+  --color: 128, 0, 128;
+  background-color: rgb(var(--color));
+}
+.black{
+  --color: 0, 0, 0;
+  background-color: rgb(var(--color));
+}
+
+@keyframes pulse{
+  0%{
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0px rgba(var(--color), 0.4);
+  }
+  70%{
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(var(--color), 0);
+  }
+  100%{
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0px rgba(var(--color), 0);
+  }
+}
+   
+ 

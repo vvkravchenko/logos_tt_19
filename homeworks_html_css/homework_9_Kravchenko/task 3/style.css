@@ -1,0 +1,77 @@
+body{
+  background: url(space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+.orbita{
+  border: 1px solid rgba(233, 225, 225, 0.2);
+  width: 600px;
+  height: 150px;
+  border-radius: 50%/50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  z-index: 3;
+}
+.earth{
+  width: 300px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 1;
+}
+.moon{
+  width: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+    left: calc(50% - 320px);
+  z-index: 2;
+  animation: linear 10s orbita infinite;
+}
+@keyframes orbita{
+  0%{
+    top: calc(50% - 25px);
+    left: calc(50% - 320px);
+  }
+  12%{
+    top: calc(50% - 85px);
+    left: calc(50% - 200px);
+    z-index: 0; 
+  }
+  25%{
+    top: calc(50% -  100px);
+    left: calc(50% - 25px);
+  }
+  37%{
+    top: calc(50% - 85px);
+    left: calc(50% + 150px);
+  }
+  50%{
+    top: calc(50% - 25px);
+    left: calc(50% + 265px);
+  }
+  63%{
+    top: calc(50% + 35px);
+    left: calc(50% + 150px);
+  }
+  75%{
+    top: calc(50% + 50px);
+    left: calc(50% - 25px);
+  }
+  88%{
+    top: calc(50% + 35px);
+    left: calc(50% - 200px);
+  }
+  100%{
+    top: calc(50% - 25px);
+    left: calc(50% - 320px);
+  }
+
+}
+ 
