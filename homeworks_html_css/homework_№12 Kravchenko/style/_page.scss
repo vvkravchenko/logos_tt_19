@@ -1,0 +1,264 @@
+main{
+    .descriptionTitle{
+        margin: 40px auto 20px;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .descriptionBox{
+        width: 940px;
+        margin: 0 auto;
+        @include flex-between;
+        @media screen and (max-width: 1024px){
+            width: 100%;
+            }
+            @media screen and (max-width: 480px){
+               flex-wrap: wrap;
+                }
+        .stepBox{
+            width: 300px;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            @media screen and (max-width: 1024px){
+                width: 100%;
+                height: 400px;
+                margin: 0 10px;
+                }
+                @media screen and (max-width: 480px){
+                    height: 240px;
+                    margin-bottom: 10px;
+                    }
+        }
+        .step1{
+            background-image: url(./img/bg_step1.png);
+        }
+        .step2{
+            background-image: url(./img/bg_step2.png);
+        }
+        .step3{
+            background-image: url(./img/bg_step3.png);
+        }
+    }
+    .partnersTitle{
+        margin: 40px auto 20px;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .partners{
+        width: 940px;
+        margin: 0 auto;
+        @include flex-between;
+
+        @media screen and (max-width: 1024px){
+            width: 70%;
+            flex-wrap: wrap;
+            }
+            @media screen and (max-width: 480px){
+                width: 90%;
+                }
+        .partnersProfile{
+            width: 25%;
+            height: 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            .photo1{
+                background-image: url(./img/photo1.png);
+                & div{
+                    background-color: #FF4E50;
+                }
+            }
+            .photo2{
+                background-image: url(./img/photo2.png);
+                & div{
+                    background-color: #19D4CA;
+                }
+            }
+            .photo3{
+                background-image: url(./img/photo3.png);
+                & div{
+                    background-color: #FFA710;
+                }
+            }
+            .photo4{
+                background-image: url(./img/photo4.png);
+                & div{
+                    background-color: #667DF3;
+                }
+
+            }
+
+            @media screen and (max-width: 1024px){
+                width: 50%;
+                }
+                @media screen and (max-width: 480px){
+                    width: 100%;
+                    }
+        }
+    }
+    .btn-seePartners{
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #FF4E50;
+
+        width: 180px;
+        height: 40px;
+        margin: 36px auto;
+        border: 2px solid #FF4E50;
+        border-radius: 40px;
+        @include flex-center;
+        }
+    .activitiesTitle{
+        margin: 40px auto 20px;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .activityBox{
+        width: 940px;
+        height: 970px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1024px){
+            width: 70%;
+            height: calc(100vh - 26px);
+            }
+            @media screen and (max-width: 480px){
+               width: 90%;
+               height: 100%;
+                }
+
+        .activityDesc{
+            width: 300px;
+            height: 310px;
+
+            font-family: Montserrat;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 27px;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-align: center;
+            @include flex-center;
+
+            background-position: center;
+            background-size: cover;
+            
+            @media screen and (max-width: 1024px){
+                width: 32%;
+                height: 32%;
+                }
+                @media screen and (max-width: 480px){
+                    width: 100%;
+                    height: 120px;
+                    }
+        }
+        .bigActivityBox{
+           width: 620px;
+            @media screen and (max-width: 1024px){
+                width: 66%;
+                }
+                @media screen and (max-width: 480px){
+                    width: 100%;
+                    height: 120px;
+                    }
+        }
+        .bgAct1{
+            background-image: url(./img/bg_act1.png);
+        }
+        .bgAct2{
+            background-image: url(./img/bg_act2.png);
+        }
+        .bgAct3{
+            background-image: url(./img/bg_act3.png);
+        }
+        .bgAct4{
+            background-image: url(./img/bg_act4.png);
+        }
+        .bgAct5{
+            background-image: url(./img/bg_act5.png);
+        }
+        .bgAct6{
+            background-image: url(./img/bg_act6.png);
+        }
+        .bgAct7{
+            background-image: url(./img/bg_act7.png);
+        }
+    }
+    .formTitle{
+        margin: 40px auto 20px;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .formDesc{
+        margin: 40px auto 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 14px;
+        text-align: center;
+    }
+    form{
+        width: 30%;
+        height: 40px;
+        margin: 25px auto 100px;
+        display: flex;
+        justify-content: space-between;
+        [type = "text"]{
+            width: 60%;
+            height: 100%;
+        }
+        [type = "button"]{
+            width: 38%;
+            height: 100%;
+            border-radius: 40px;
+            background-color: #FF4E50;
+            color: #FFFFFF;
+            outline: none;
+        }
+        @media screen and (max-width: 1024px){
+            width: 60%;
+            }
+            @media screen and (max-width: 480px){
+               flex-wrap: wrap;
+               [type = "text"],[type = "button"]{
+                   width: 100%;
+                   margin-bottom: 10px;
+               }
+                }
+    }
+}
